@@ -1,0 +1,48 @@
+# cd
+alias u='cd ..'
+alias c='cd'
+alias and='&&'
+alias jm='cd ~/Development/jazz_mailer'
+alias b='cd ~/Development/bolt'
+alias p='cd ~/Development/phaizr'
+
+# ls
+alias ls="ls -F"
+alias l="ls -lAh"
+alias ll="ls -l"
+alias la='ls -A'
+
+# git
+alias gad='git add .'
+alias gl='git pull'
+alias glm='git pull origin master'
+alias glp='git pull origin production'
+alias gp='git push'
+alias gpm='git push origin master'
+alias gpp='git push origin production'
+alias gd='git diff'
+alias gc='git commit'
+alias gchm='git checkout master'
+alias gchp='git checkout production'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+
+# cap
+alias capp='cap production deploy'
+
+# rails
+alias sc='script/console'
+alias ss='script/server'
+alias sg='script/generate'
+alias a='autotest -rails'
+alias tlog='tail -f log/development.log'
+alias scaffold='script/generate nifty_scaffold'
+alias migrate='rake db:migrate db:test:clone'
+alias rst='touch tmp/restart.txt'
+alias c='clear'
+
+# commands starting with % for pasting from web
+alias %=' '
