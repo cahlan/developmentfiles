@@ -12,6 +12,10 @@ alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
 
+#jfiles
+alias jf="cd ~/.jfiles/"
+alias jfe="mvim ~/.jfiles/"
+
 # git
 alias gad='git add .'
 alias gl='git pull'

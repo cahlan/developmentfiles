@@ -9,6 +9,6 @@
 	branch = auto
 [core]
 	excludesfile = /Users/Administrator/.gitignore
-	editor = mvim
+	editor = mvim -f
 [apply]
 	whitespace = nowarn

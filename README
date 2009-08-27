@@ -23,7 +23,7 @@ Features
 
   findr .                                   #launches Mac OS X Finder in current directory
   find_replace . "jared" "onesupercoder"    #find and replace in current directory
-  find_in_file onesupercoder                #find in file current directory and sub directories for the word onesupercoder 
+  find_in_file onesupercoder                #find in files and sub directories for onesupercoder
 
 I normally place all of my coding projects in ~/code, so this directory 
 can easily be accessed (and tab completed) with the "c" command.

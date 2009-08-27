@@ -1,6 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/Administrator'
 let g:netrw_dirhist_2='/Users/Administrator/.jfiles'
 let g:netrw_dirhist_3='/Users/Administrator'
 let g:netrw_dirhist_4='/Users/Administrator/.jfiles'
+let g:netrw_dirhist_5='/Users/Administrator/Development/jazz_mailer'
+let g:netrw_dirhist_6='/Users/Administrator/Development/jazz_mailer/app/models'
+let g:netrw_dirhist_7='/Users/Administrator/.jfiles'
+let g:netrw_dirhist_8='/Users/Administrator/.jfiles/zsh'
