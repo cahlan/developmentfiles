@@ -49,8 +49,6 @@ bindkey ^R history-incremental-search-backward
 # expand functions in the prompt
 setopt prompt_subst
 
-# prompt
-export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 
 # ignore duplicate history entries
 setopt histignoredups
@@ -58,10 +56,3 @@ setopt histignoredups
 # keep more history
 #export HISTSIZE=200
 
-#bindkey '^[^[[D' backward-word
-#bindkey '^[^[[C' forward-word
-#bindkey '^[[5D' beginning-of-line
-#bindkey '^[[5C' end-of-line
-#bindkey '^[[3~' delete-char
-#bindkey '^[^N' newtab
-#bindkey '^?' backward-delete-char 

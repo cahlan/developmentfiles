@@ -1,5 +1,5 @@
 " Font
-set guifont=Monaco:h15.00
+set guifont=Monaco:h25.00
 
 " No audible bell
 set vb
@@ -15,3 +15,5 @@ if filereadable(".gvimrc.local")
   source .gvimrc.local
 endif
 
+
+au VimLeave * maca hide:
