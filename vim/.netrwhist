@@ -1,2 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/Administrator/Development/jazz_mailer'
+let g:netrw_dirhist_2='/Users/Administrator/Development'
+let g:netrw_dirhist_3='/Users/Administrator/Development/bolt'
+let g:netrw_dirhist_4='/Users/Administrator/Development/bolt/mailer'

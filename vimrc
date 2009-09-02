@@ -24,6 +24,7 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
+set hlsearch
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -71,13 +72,14 @@ else
 
 endif " has("autocmd")
 
-" if has("folding")
-  " set foldenable
-  " set foldmethod=syntax
-  " set foldlevel=1
-  " set foldnestmax=2
-  " set foldtext=strpart(getline(v:foldstart),0,50).'\ ...\ '.substitute(getline(v:foldend),'^[\ #]*','','g').'\ '
-" endif
+if has("folding")
+  set foldenable
+  set foldmethod=syntax
+  set foldlevel=1
+  set foldnestmax=2
+  set foldtext=strpart(getline(v:foldstart),0,50).'\ ...\ '.substitute(getline(v:foldend),'^[\ #]*','','g').'\ '
+endif
+
 
 " Softtabs, 2 spaces
 set tabstop=2
@@ -164,6 +166,20 @@ endif
 if executable("ack")
   set grepprg=ack\ -H\ --nogroup\ --nocolor
 endif
+
+" Setup ackgrep function
+function! AckGrep(command)
+  cexpr system("ack " . a:command)
+  cw " show quickfix window already
+endfunction
+
+
+
+"Pass ack arguments to ackgrep function
+command! -nargs=+ -complete=file Ack call AckGrep(<q-args>)
+
+"Map ,a search_term to ack search_term
+map <leader>a :Ack<space>
 
 " Color scheme
 colorscheme vividchalk
