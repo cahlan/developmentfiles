@@ -8,7 +8,7 @@ alias p='cd ~/Development/phaizr'
 
 # ls
 alias ls="ls -F"
-alias l="ls -lAh"
+alias l="ls -alsh"
 alias ll="ls -l"
 alias la='ls -A'
 
