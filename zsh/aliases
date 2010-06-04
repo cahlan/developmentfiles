@@ -2,9 +2,8 @@
 alias u='cd ..'
 alias c='cd'
 alias and='&&'
-alias jm='cd ~/Development/jazz_mailer'
-alias b='cd ~/Development/bolt'
-alias p='cd ~/Development/phaizr'
+alias code='cd ~/code/'
+alias a='cd ~/code/alert3ngine'
 
 # ls
 alias ls="ls -F"
