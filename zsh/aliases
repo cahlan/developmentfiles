@@ -2,8 +2,8 @@
 alias u='cd ..'
 alias c='cd'
 alias and='&&'
-alias code='cd ~/code/'
-alias a='cd ~/code/alert3ngine'
+alias code='cd ~/Development/Rails'
+alias ht='cd ~/Development/Rails/hip-twister'
 
 # ls
 alias ls="ls -F"
