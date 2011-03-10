@@ -4,9 +4,9 @@ alias c='cd'
 alias and='&&'
 alias code='cd ~/Development/Rails'
 alias ht='cd ~/Development/Rails/hip-twister'
-
+alias oht='open http://hip-twister.local'
 alias tr='touch tmp/restart.txt'
-
+alias troht='tr && oht'
 
 # ls
 alias ls="ls -F"
