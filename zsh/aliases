@@ -5,6 +5,9 @@ alias and='&&'
 alias code='cd ~/Development/Rails'
 alias ht='cd ~/Development/Rails/hip-twister'
 
+alias tr='touch tmp/restart.txt'
+
+
 # ls
 alias ls="ls -F"
 alias l="ls -alsh"
@@ -39,7 +42,7 @@ alias capp='cap production deploy'
 # rails
 alias rc='rails console'
 alias rs='rails server'
-alias rg='rails g'
+alias rg='rails generate'
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
 alias scaffold='rails generate nifty_scaffold'
