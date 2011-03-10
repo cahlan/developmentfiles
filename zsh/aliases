@@ -37,12 +37,12 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias capp='cap production deploy'
 
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
+alias rc='rails console'
+alias rs='rails server'
+alias rg='rails g'
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
+alias scaffold='rails generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 alias c='clear'
