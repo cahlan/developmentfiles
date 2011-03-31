@@ -3,10 +3,10 @@ alias u='cd ..'
 alias c='cd'
 alias and='&&'
 alias code='cd ~/Development/Rails'
-alias ht='cd ~/Development/Rails/hip-twister'
-alias oht='open http://hip-twister.local'
+alias spr='cd ~/Development/Rails/SimplyPayRent'
+alias ospr='open http://simplypayrent.local/'
 alias tr='touch tmp/restart.txt'
-alias troht='tr && oht'
+alias trospr='tr && ospr'
 
 # ls
 alias ls="ls -F"
