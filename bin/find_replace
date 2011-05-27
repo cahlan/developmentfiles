@@ -1,15 +1,26 @@
 #!/usr/bin/env ruby
-require 'find' 
-if ARGV.size < 3 || ARGV[0] == '-h'
+require 'find'
+require 'iconv'
+
+ic = Iconv.new('UTF-8//IGNORE', 'UTF-8')
+arg0 = ic.iconv(ARGV[0])
+
+
+if ARGV.size < 3 || arg0 == '-h'
   puts "findreplace.rb Finds and replaces strings in the given directory."
   puts "syntax: findreplace.rb PATH find_string replace_string [ignore_dirs]"
   exit
 end
 
-puts ARGV[0]
-puts ARGV[1]
-puts ARGV[2]
-Find.find(ARGV[0]) do |file_name|
+arg1 = ic.iconv(ARGV[1])
+arg2 = ic.iconv(ARGV[2])
+arg3 = ic.iconv(ARGV[3])
+
+puts arg0
+puts arg1
+puts arg2
+
+Find.find(arg0) do |file_name|
   if File.file? file_name
     file = File.new(file_name)
     lines = file.readlines
@@ -17,7 +28,7 @@ Find.find(ARGV[0]) do |file_name|
 
     changes = false
     lines.each do |line|
-      changes = true if line.gsub!(/#{ARGV[1]}/, ARGV[2])
+      changes = true if line.gsub!(/#{arg1}/, arg2)
     end
 
     # Don't write the file if there are no changes
@@ -31,5 +42,5 @@ Find.find(ARGV[0]) do |file_name|
     end
   end
 
-  Find.prune if ARGV[3] && file_name =~ /#{ARGV[3]}/  
+  Find.prune if arg3 && file_name =~ /#{arg3}/  
 end
