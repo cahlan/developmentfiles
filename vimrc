@@ -14,6 +14,8 @@ set smarttab
 set noswapfile
 set nobackup
 syntax on
+set guifont=Monaco:h34
+
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
