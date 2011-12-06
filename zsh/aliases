@@ -19,7 +19,7 @@ alias la='ls -A'
 
 #jfiles
 alias jf="cd ~/.jfiles/"
-alias jfe="mvim ~/.jfiles/"
+alias jfe="vim ~/.jfiles/"
 
 # git
 alias gad='git add .'
@@ -48,7 +48,6 @@ alias rs='rails server'
 alias rg='rails generate'
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
-alias scaffold='rails generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 alias c='clear'
