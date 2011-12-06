@@ -2,7 +2,8 @@
 
 # misc
 alias reload='. ~/.bash_profile'
-alias noise='aplay /usr/share/sounds/alsa/Noise.wav'
+alias noise='ogg123 /usr/share/sounds/ubuntu/stereo/desktop-logout.ogg'
 alias chrome='chromium-browser'
-alias pushit='gca && gpm && chrome http://www.youtube.com/watch?v=vCadcBR95oU'
+alias push='gca && gpm && noise'
+alias pushit='chrome http://www.youtube.com/watch?v=vCadcBR95oU'
 alias pricetag='chrome http://www.youtube.com/watch?v=qMxX-QOV9tI'
