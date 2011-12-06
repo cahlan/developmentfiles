@@ -3,12 +3,10 @@ alias u='cd ..'
 alias c='cd'
 alias and='&&'
 alias code='cd ~/Development/Rails'
-alias spr='cd ~/Development/Rails/SimplyPayRent'
 alias ospr='open http://simplypayrent.local/'
 alias olh='open http://localhost:3000/'
 alias tr='touch tmp/restart.txt'
 alias trospr='tr && ospr'
-alias lb='cd ~/Development/Rails/LockBox'
 
 
 # ls
